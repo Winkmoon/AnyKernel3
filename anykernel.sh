@@ -4,7 +4,7 @@
 ### AnyKernel setup
 # global properties
 properties() { '
-kernel.string=KernelSU by KernelSU Developers | Build by cctv18
+kernel.string=ShirokoNeko-Build 酷安@欣然酱_official
 do.devicecheck=0
 do.modules=0
 do.systemless=0
@@ -39,9 +39,9 @@ case $kernel_version in
     *) ksu_supported=false ;;
 esac
 
-ui_print "内核构建者: Coolapk@Scctv18"
+ui_print "内核构建者 酷安@欣然酱_official"
 ui_print " " "  -> ksu_supported: $ksu_supported"
-$ksu_supported || abort "  -> Non-GKI device, abort."
+$ksu_supported || abort "  -> 您当前设备不受ShirokoNeko内核的支持！！"
 
 # boot install
 if [ -L "/dev/block/bootdevice/by-name/init_boot_a" -o -L "/dev/block/by-name/init_boot_a" ]; then
