@@ -36,6 +36,9 @@ case $kernel_version in
     5.1*) ksu_supported=true ;;
     6.1*) ksu_supported=true ;;
     6.6*) ksu_supported=true ;;
+    5.4*) ksu_supported=true ;;
+    4.4*) ksu_supported=true ;;
+    4.1*) ksu_supported=true ;;
     *) ksu_supported=false ;;
 esac
 
